@@ -1,0 +1,106 @@
+.headerContainer {
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+
+header {
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem;
+}
+
+header .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+
+header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #000000;
+}
+
+header h1 button {
+    position: relative;
+    left: -50px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header nav ul li button {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+/* 전체영역에서 여백을 없애줌 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ul li태그에 리스트 스타일을 없앰 */
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#menu {
+    position: relative;
+    right: 400px;
+    left: -200px;
+    font: bold 30px "malgun gothic";
+    width: 100%;
+    /* background: #ccc; */
+    color: black;
+    line-height: 45px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#menu>ul>li {
+    float: left;
+    width: 200px;
+
+    position: relative;
+}
+
+#menu>ul>li>ul {
+    width: 200px;
+    top: 65px;
+    display: none;
+    position: absolute;
+    font-size: 18px;
+}
+
+#menu>ul>li:hover>ul {
+    display: block;
+}
+
+#menu>ul>li>ul>li:hover {
+    background: #00ced1;
+    /* transition: ease 1s; */
+}
