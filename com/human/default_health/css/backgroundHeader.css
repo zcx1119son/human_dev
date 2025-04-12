@@ -1,0 +1,6 @@
+.backgroundHeader {
+    background: url() center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 230px;
+}
