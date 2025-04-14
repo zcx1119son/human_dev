@@ -33,6 +33,7 @@
                 <button type="button" id="loginButton" class="loginButton" name="loginButton" onclick="login();">
                     로그인
                 </button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
             </div>
 
         </form>
@@ -44,7 +45,8 @@
                 <input type="text" id="searchLoginId" name="searchLoginId" placeholder="아이디" minlength="8" maxlength="12"> <br>
                 <input type="text" id="searchSno" name="searchSno" placeholder="주민등록번호" minlength="12" maxlength="18"> <br>
                 <pre></pre>
-                <button type="button" class="searchId" onclick="searchId()">아이디 찾기</button>
+                <button type="button" id="searchId" onclick="searchId()">아이디 찾기</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
             </div>
         </form>
 
@@ -69,6 +71,7 @@
                 <input type="text" id="userId" name="userId" placeholder="아이디" minlength="12" maxlength="18"> <br>
                 <pre></pre>
                 <button type="button" class="searchId" onclick="changePwd()">확인</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
 
             </div>
         </form>
@@ -83,6 +86,7 @@
                 <input type="newPasswordConfirm" id="newPasswordConfirm" placeholder="새 비밀번호 확인">
                 <pre></pre>
                 <button type="button" onclick="newPwd()">재설정 하기</button>
+                <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
             </div>
         </form>
 
@@ -127,6 +131,8 @@
                     </input>
                     <br>
                     <button type="button" class="join" onclick="joinCheck()">회원가입</button>
+                    <button type="button" id="backBtn" name="backBtn" onclick="goBack();">뒤로가기</button>
+                    
                 </div>
 
         </form>
@@ -134,7 +140,7 @@
         <!-- JQuery를 사용하기 위함 -->
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="../../js/login.js"></script>
-
+        <script src="../../js/goPage.js"></script>
     </body>
 
 </html>
