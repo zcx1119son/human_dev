@@ -54,9 +54,9 @@
                         로 그 인
                     </div>
                     <pre></pre>
-                    <div class="searchId"><a href="#">아이디 찾기</a></div>
-                    <div class="searchPw"><a href="#">비밀번호 찾기</a></div>
-                    <div class="goJoin"><a href="#">회원가입</a></div>
+                    <div class="searchId" onclick="searchId()">아이디 찾기</div>
+                    <div class="searchPw" onclick="searchPw()">비밀번호 찾기</div>
+                    <div class="goJoin" onclick="goJoin()">회원가입</div>
                 </div>
 
             </section>
@@ -65,21 +65,21 @@
 
     <div class="mainExercise">
         <div style="float: left; text-align: center; margin-right: 50px;">
-            데드리프트
+            <h2>데드리프트</h2>
             <div>
                 <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
             </div>
         </div>
 
         <div style="float: left; text-align: center; margin-right: 50px;">
-            스쿼트
+            <h2>스쿼트</h2>
             <div>
                 <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
             </div>
         </div>
 
         <div style="float: left; text-align: center; margin-right: 50px;">
-            벤치프레스
+            <h2>벤치프레스</h2>
             <div>
                 <img src="../images/aboutMe.JPG" alt="" width="400px" height="425px">
             </div>
@@ -89,39 +89,8 @@
 
     <script src="../js/headerImport.js"></script>
     <script src="../js/goPage.js"></script>
-
-    <script>
-        const sliderWrap = document.querySelector(".imgSlide");
-        const imgSlide = document.querySelector(".imgSlide");
-        const slideInner = document.querySelector(".slideInner");
-        const slider = document.querySelectorAll(".slider");
-        const slideBtn = document.querySelector("slideBtn");
-        const prev = document.querySelector(".prev");
-        const next = document.querySelector(".next");
-
-        let currentIndex = 0;
-        let sliderCount = slider.length;
-        let sliderWidth = imgSlide.offsetWidth;
-
-        function gotoSlider(num) {
-            slideInner.style.transition = "all 400ms";
-            slideInner.style.transform = "translateX(" + -sliderWidth * num + "px)";
-            currentIndex = num;
-        }
-
-
-        prev.addEventListener("click", () => {
-            let prevIndex = (sliderCount + currentIndex - 1) % sliderCount;
-            gotoSlider(prevIndex);
-        });
-
-        //오른쪽 버튼 클릭
-        //01234
-        next.addEventListener("click", () => {
-            let nextIndex = (currentIndex + 1) % sliderCount;
-            gotoSlider(nextIndex);
-        });
-    </script>
+    <script src="../js/index.js"></script>
+    
 </body>
 
 </html>

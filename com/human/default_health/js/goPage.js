@@ -9,6 +9,24 @@ function goMain() {
 
 function goLogin() {
 
-    window.location.href = "../html/index.html";
+    window.location.href = "../html/user/login.html?login";
+
+}
+
+function searchId() {
+
+    window.location.href = "../html/user/login.html?searchId";
+
+}
+
+function searchPw() {
+
+    window.location.href = "../html/user/login.html?searchPw";
+
+}
+
+function goJoin() {
+
+    window.location.href = "../html/user/login.html?goJoin";
 
 }
