@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_리뷰작성</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .headerContainer {
+          max-width: 1440px;
+          margin: 0 auto;
+        }
+        header {
+          position: absolute;
+          color: #ffffff;
+          top: 0;
+          z-index: 1;
+          width: 100%;
+          padding: 1rem;
+        }
+        header .headerContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 1440px;
+        }
+        header nav ul {
+          display: flex;
+        }
+        header nav ul li {
+          padding: 10px;
+        }
+        header button {
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+          color: #000000;
+        }
+        header h1 button {
+          position: relative;
+          left: -50px;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        header nav ul li button {
+          color: #000000;
+          font-size: 1.2rem;
+        }
+        /* 전체영역에서 여백을 없애줌 */
+        * {
+          margin: 0;
+          padding: 0;
+          
+        }
+        /* ul li태그에 리스트 스타일을 없앰 */
+        ul li {
+          list-style: none;
+        }
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+        #menu {
+          position: relative;
+          right: 400px;
+          left: -20px;
+          font: bold 30px "malgun gothic";
+          width: 100%;
+          /* background: #ccc; */
+          color: black;
+          line-height: 45px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        #menu>ul>li {
+          float: left;
+          width: 250px;
+          position: relative;
+        }
+        #menu>ul>li>ul {
+          width: 250px;
+          top: 65px;
+          display: none;
+          position: absolute;
+          font-size: 18px;
+        }
+        #menu>ul>li:hover>ul {
+          display: block;
+        }
+        #menu>ul>li>ul>li:hover {
+          background: #00ced1;
+          /* transition: ease 1s; */
+        }
+        main{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+        }
+        main div{
+          width:800px;
+        }
+        .reviewGoods{
+          margin: 10px;
+          width:800px;
+          height: 50px;
+          display: flex;
+          justify-content: flex-start;
+          border: 1px solid black;
+        }
+        .reviewGoods div{
+          width: 100px;
+          text-align: center;
+          font-size: 16px;
+          line-height: 300%;
+        }
+        .content{
+          border: 1px solid black;
+          margin: 10px;
+        }
+        .reviewTitle{
+          margin: 10px;
+          width:600px;
+          display: flex;
+          padding:30px;
+        }
+        .reviewTitle div input{
+          width:440px;
+          height: 40px;
+          margin:20px;
+          font-size: 24px;
+        }
+        .star{
+          width:200px; 
+          height:45px; 
+          margin:20px;
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900; 
+          color: #FFD43B;
+        }
+        .star option{
+          font-family: "Font Awesome 5 Free"; 
+          font-weight:900;
+          color: #FFD43B;
+        }
+        .reviewContent{
+          margin:0 50px 50px 50px;
+        }
+        .reviewContent textarea{
+          width:690px;
+          height: 350px;
+        }
+        .reviewButnContain{
+          width:690px;
+          margin: 50px;
+          display: flex;
+          text-align: center;
+        }
+        .reviewButnContain button{
+          margin: 10px;
+          width: 180px;
+          height: 60px;
+        }
+        .dropdown-content a li{
+          list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../../css/common/init.css">
+    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+      <div class="headerContainer">
+      <h1>
+        <button class="headLogo" onclick="goMain()"><img src="../../images/testimage.png" alt="로고"></button>
+        </h1>
+  
+        <!-- nav 태그 -->
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="#">운동법</a>
+                    </li>
+                    <li>
+                        <a href="#">건강보조</a>
+                        <ul>
+                            <li><a href="#">운동장비</a></li>
+                            <li><a href="#">건강보조식품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+          </nav>
+          <!-- nav 끝 -->
+      
+      <!-- container div 끝 -->
+    </header>
+    <div class="backgroundHeader"></div>
+    <main>
+      <div>
+        <div class="reviewGoods">
+          <div>단백질 보충제</div>
+          <div>></div>
+          <div>제품명</div>
+        </div>
+        <div class="content">
+          <div class="reviewTitle">
+            <div>
+              <input type="text" placeholder="제목:">
+            </div>
+            <div>
+            </div>
+            <div>
+              <select class="star">
+                <option class="star_1" selected="selected">&#xf005</option>
+                <option class="star_2">&#xf005&#xf005</option>
+                <option class="star_3">&#xf005&#xf005&#xf005</option>
+                <option class="star_4">&#xf005&#xf005&#xf005&#xf005</option>
+                <option class="star_5">&#xf005&#xf005&#xf005&#xf005&#xf005</option>
+              </select>
+            </div>
+          </div>
+          <div class="reviewContent">
+            <textarea type="content" maxlength="50">내용</textarea>
+          </div>
+          <div class="reviewButnContain">
+            <div>
+              <button>작성</button>
+            </div>
+            <div>
+              <button>취소</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_공통상품</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .headerContainer {
+          max-width: 1440px;
+          margin: 0 auto;
+        }
+        header {
+          position: absolute;
+          color: #ffffff;
+          top: 0;
+          z-index: 1;
+          width: 100%;
+          padding: 1rem;
+        }
+        header .headerContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 1440px;
+        }
+        header nav ul {
+          display: flex;
+        }
+        header nav ul li {
+          padding: 10px;
+        }
+        header button {
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+          color: #000000;
+        }
+        header h1 button {
+          position: relative;
+          left: -50px;
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        header nav ul li button {
+          color: #000000;
+          font-size: 1.2rem;
+        }
+        /* 전체영역에서 여백을 없애줌 */
+        * {
+          margin: 0;
+          padding: 0;
+          
+        }
+        /* ul li태그에 리스트 스타일을 없앰 */
+        ul li {
+          list-style: none;
+        }
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
+        #menu {
+          position: relative;
+          right: 400px;
+          left: -20px;
+          font: bold 30px "malgun gothic";
+          width: 100%;
+          /* background: #ccc; */
+          color: black;
+          line-height: 45px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        #menu>ul>li {
+          float: left;
+          width: 250px;
+          position: relative;
+        }
+        #menu>ul>li>ul {
+          width: 250px;
+          top: 65px;
+          display: none;
+          position: absolute;
+          font-size: 18px;
+        }
+        #menu>ul>li:hover>ul {
+          display: block;
+        }
+        #menu>ul>li>ul>li:hover {
+          background: #00ced1;
+          /* transition: ease 1s; */
+        }
+        .goods{
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .goodsImage{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .goodsExplanation{
+            width: 700px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .reviewWrite{
+            width:1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .reviewWrite button{
+            font-size: 20px;
+            width:180px;
+        }
+        .customer{
+            width: 120px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .reviewRead{
+            margin: 50px;
+            width:1200px;
+            border: 1px solid black;
+        }
+        .reviewRead div{
+            display: flex;
+            margin: 20px;
+        }
+        .reviewCustomer{
+            width:200px;
+        }
+        .reviewContent{
+            width:700px;
+        }
+        .reviewStar{
+            width:150px;
+        }
+        footer div ul{
+            display: flex;
+            justify-content: center;
+        }
+        footer div ul li{
+            padding:20px;
+            cursor: pointer;
+        }
+        .icon{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight:900; 
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            }
+    </style>
+    <link rel="stylesheet" href="../../css/common/init.css">
+    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+   
+<body>
+    <header>
+        <div class="headerContainer">
+    
+            <h1>
+                <button class="headLogo" onclick="goMain()"><img src="../../images/testimage.png" alt="로고"></button>
+            </h1>
+    
+            <!-- nav 태그 -->
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">운동법</a>
+                        </li>
+                        <li>
+                            <a href="#">건강보조</a>
+                            <ul>
+                                <li><a href="#">운동장비</a></li>
+                                <li><a href="#">건강보조식품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                            <ul>
+                                <li><a href="#">자유게시판</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+            <!-- nav 끝 -->
+        </div>
+        <!-- container div 끝 -->
+    </header>
+    <div class="backgroundHeader"></div>
+        <main>
+            <div>
+                <div class="goods">
+                    <div class="goodsImage">상품이미지</div>
+                    <div class="goodsExplanation">구매 링크 & 설명</div>
+                </div>
+                <div>
+                    
+                </div>
+                <div class="reviewWrite">
+                    <div>
+                        <button>리뷰 작성하기</button>
+                    </div>
+                </div>
+
+                <div class="customer">
+                    <h2>고객 리뷰</h2>
+                </div>
+
+                <div class="reviewRead">
+                    <div>
+                        <div class="reviewCustomer">작성자</div>
+                        <div class="reviewContent">리뷰내용</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+
+                    <div>
+                        <div class="reviewCustomer">엄정민</div>
+                        <div class="reviewContent">너무 달아요.</div>
+                        <div class="reviewStar">별점</div>
+                        <div>신고</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <ul>
+                    <li class="icon">&#xf104</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li class="icon">&#xf105</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
