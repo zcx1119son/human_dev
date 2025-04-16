@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang = "ko">
+<html lang="ko">
+
 <head>
-    <meta carset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="p1.css">
+    <link rel="stylesheet" href="../../css/user/myPage.css">
+    <link rel="stylesheet" href="../../css/common/header.css">
+    <link rel="stylesheet" href="../../css/common/backgroundHeader.css">
+
     <title>My Page</title>
+
+    <style>
+        .test {
+
+            margin: 100px;
+
+        }
+    </style>
 </head>
+
 <body>
+
+    <div data-include-path="../includes/header.html"></div>
+    <div data-include-path="../includes/backgroundHeader.html" class="test"></div>
+
     <div class="section" id="mypage-container">
         <h1>마이페이지</h1>
         <!-- 프로필 영역 -->
-         <div class="section profile">
+        <div class="section profile">
             <h3>프로필 사진</h3>
             <img src="sunset2.jpg" alt="프로필 사진" />
             <div>
@@ -19,9 +36,6 @@
                 <button onclick="confirmLeave()">회원탈퇴</button>
             </div>
         </div>
-
-
-
 
         <!-- 운동 선택 -->
         <div class="section" id="section exercise">
@@ -46,7 +60,7 @@
                     <option value="백 익스텐션">백 익스텐션</option>
                     <option value="시티드 케이블 로우">시티드 케이블 로우</option>
                     <option value="시티드 로우 머신">시티드 로우 머신</option>
-                    <option value="덤벨 데드리프트">덤벨 데드리프트</option>             
+                    <option value="덤벨 데드리프트">덤벨 데드리프트</option>
                 </optgroup>
                 <optgroup label="어깨">
                     <option value="오버헤드 프레스">오버헤드 프레스</option>
@@ -93,7 +107,7 @@
                 <option value="사이클">사이클</option>
                 <option value="스텝퍼">스텝퍼</option>
                 <option value="스텝밀">스텝밀</option>
-                <option value="크로스 트레이너">크로스 트레이너</option> 
+                <option value="크로스 트레이너">크로스 트레이너</option>
                 <option value="운동선택" selected>운동선택</option>
             </select>
             <input type="number" id="time" placeholder="운동 시간(분)">
@@ -104,30 +118,24 @@
 
             <!-- 목표 칼로리 및 진행률 -->
             <div class="circle-container">
-            <h3>일일 목표 활동량</h3>
+                <h3>일일 목표 활동량</h3>
                 <canvas id="progressCanvas" width="150"></canvas>
             </div>
         </div>
 
-       
-
-            
-       
-       
         <!-- 건강 정보 -->
         <div class="section" id="section health-info">
             <h2>건강 정보</h2>
             <p>나이: <strong>39세</strong></p>
             <p>성별: <strong>남성</strong></p>
             <p>병력: <strong>역류성식도염</strong></p>
-            <canvas id="chart" width="400" heigth="200"></canvas>
-        </div>  
+            <canvas id="chart" width="400" height="200"></canvas>
+        </div>
     </div>
 
-
-
-    
+    <script src="../../js/headerImport.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="p1.js"></script>
+    <script src="../../js/myPage.js"></script>
 </body>
+
 </html>

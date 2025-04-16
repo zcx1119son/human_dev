@@ -8,6 +8,7 @@ body {
   }
   
   #mypage-container {
+    margin-top: 230px;
     max-width: 900px;
     width: 100%;
     background: white;
