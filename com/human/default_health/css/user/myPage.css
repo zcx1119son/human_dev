@@ -5,40 +5,40 @@ body {
     padding: 20px;
     display: flex;
     justify-content: center;
-  }
-  
-  #mypage-container {
+}
+
+#mypage-container {
     margin-top: 230px;
     max-width: 900px;
     width: 100%;
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  }
-  
-  .section {
+}
+
+.section {
     width: 100%;
     text-align: center;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 12px;
     background-color: #fafafa;
-  }
-  
-  .profile img {
+}
+
+.profile img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  button {
+}
+
+button {
     margin: 5px;
     padding: 8px 14px;
     border: none;
@@ -46,24 +46,24 @@ body {
     color: white;
     border-radius: 6px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  input, select {
+}
+
+input,
+select {
     margin: 5px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  canvas {
+}
+
+canvas {
     margin-top: 15px;
-  }
-  
-  #calorie-result {
+}
+
+#calorie-result {
     color: #e55300;
-  }
-  
+}
