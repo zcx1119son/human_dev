@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>건강보조_보조식품</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+      main{
+        display: flex;
+        justify-content: center;
+      }
+      .headerContainer{
+        display: flex;
+        justify-content: center;
+        border:1px solid black;
+      }
+      .headerContainer button{
+        width:600px;
+        height: 40px;
+        border-style: none;
+        cursor: pointer;
+      }
+      .select{
+        background-color: rgb(30,116,83);
+      }
+      .classification{
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+      }
+      .dropdown{
+        position: relative;
+        display: inline;
+        border-style: none;
+      }
+      .dropbtn{
+        cursor: pointer;
+        width: 400px;
+      }
+      .dropdown-content{
+        width: 400px;
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background-color: #f9f9f9;;
+      }
+      .dropdown-content a{
+        display: block;
+        text-align: center;
+        padding : 5px;
+      }
+      .dropdown-content a:hover{
+        background-color:  #ececec;
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+      /* .healthCareContainer{
+        width: 1440px;
+        height: 36px;
+        margin: 10px;
+        display: flex;
+        border: 1px solid black;
+      }
+      .healthCareContainer button{
+        width: 720px;
+        height: 100%;
+        cursor: pointer;
+        border-style: none;
+      }
+     
+     
+      .healthClassification{
+        width: 1440px;
+        height: 36px;
+        margin: 10px;
+        display: flex;
+        border: 1px solid black;
+      }
+      .healthClassification div button{
+        width:480px;
+        height: 100%;
+        background-color: rgb(178,178,178);
+        border-style: none;
+      }
+      
+      
+       */
+    </style>
+    <!-- <style>
+      .healthCare_image{
+        height: 300px;
+        border-style: none;
+      }
+      .healthCare_image div{
+      margin:50px;
+      width:378px;
+      height: 198px;
+      border: 1px solid black;
+     }
+     .footer_healthCare{
+      border-style: none;
+     }
+     li{
+      list-style: none;
+     }
+     .footer_healthCare ul {
+      display: flex;
+      padding: 10px;
+     }
+     .healthCareContainer{
+      width:1440px;
+      height:50px;
+      border:1px solid black;
+     }
+    </style>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+<div class="backgroundHeader"></div>
+<main>
+  <div >
+    <div class="headerContainer">
+      <button class="select">단백질 보충제</button>
+      <button>영양제</button>
+    </div>
+    <div class="classification">
+      <div class="dropdown">
+        <button class="dropbtn">분류</button>
+        <div class="dropdown-content">
+          <a href="#">Default</a>
+          <a href="#">MostLoved</a>
+          <a href="#">Price:low to Hight</a>
+          <a href="#">Price:Hight to Low</a>
+          <a href="#">A - Z</a>
+          <a href="#">Newest arrivals</a>
+          <a href="#">Percentage Discount</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">맛</button>
+        <div class="dropdown-content">
+          <a href="#">Apple Caramel</a>
+          <a href="#">Asian</a>
+          <a href="#">Bitter Lemon</a>
+          <a href="#">Blue Rasoberry</a>
+          <a href="#">Brown Sugar</a>
+          <a href="#">Candy</a>
+          <a href="#">Caramel Peanut</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">식단별</button>
+        <div class="dropdown-content">
+          <a href="#">Default</a>
+          <a href="#">MostLoved</a>
+          <a href="#">Price:low to Hight</a>
+          <a href="#">Price:Hight to Low</a>
+          <a href="#">A - Z</a>
+          <a href="#">Newest arrivals</a>
+          <a href="#">Percentage Discount</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- <main>
+<nav>
+  <div class="healthCareContainer">
+    <button class="select">단백질 보충제</button>
+    <button class="not_select">영양제</button>
+  </div>
+</nav>
+<nav>
+  <div class="healthClassification">
+    <div class="dropdown">
+      <button class="dropbtn" >분류</button>
+      <div class="dropdown-content">
+        <a href="#">Default</a>
+        <a href="#">MostLoved</a>
+        <a href="#">Price:low to Hight</a>
+        <a href="#">Price:Hight to Low</a>
+        <a href="#">A - Z</a>
+        <a href="#">Newest arrivals</a>
+        <a href="#">Percentage Discount</a>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"> 맛</button>
+      <div class="dropdown-content">
+      <a>Default</a>
+      <a>MostLoved</a>
+      <a>Price:low to Hight</a>
+      <a>Price:Hight to Low</a>
+      <a>A - Z</a>
+      <a>Newest arrivals</a>
+      <a>Percentage Discount</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">식단별</button>
+      <div class="dropdown-content">
+      <a>Default</a>
+      <a>MostLoved</a>
+      <a>Price:low to Hight</a>
+      <a>Price:Hight to Low</a>
+      <a>A - Z</a>
+      <a>Newest arrivals</a>
+      <a>Percentage Discount</a>
+      </div>
+    </div>
+  </div>
+</nav>  -->
+
+   <!-- <div>
+      <div class="select">단백질 보충제</div>
+      <div class="not_select">영양제</div>
+   </div>
+   <div>
+    <div>
+      <ul>
+        <li>
+          <a>분류</a>
+        </li>
+        <li>Default</li>
+        <li>MostLoved</li>
+        <li>Price:low to Hight</li>
+        <li>Price:Hight to Low</li>
+        <li>A - Z</li>
+        <li>Newest arrivals</li>
+        <li>Percentage Discount</li>
+      </ul>
+    </div>
+    <div>맛</div>
+    <div>식단별</div>
+   </div>
+   <div class="healthCare_image">
+      <div>이미지1</div>
+      <div>이미지2</div>
+      <div>이미지3</div>
+    </div>
+   <div class="healthCare_image">
+      <div>이미지4</div>
+      <div>이미지5</div>
+      <div>이미지6</div>
+    </div>
+    <footer>
+      <div class="footer_healthCare">
+        <p><i class="fa-solid fa-chevron-left"></i></p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-chevron-left"></i>
+          </li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+          </li>
+        </ul>
+      </div>
+    </footer> -->
+</body>
+</html>
